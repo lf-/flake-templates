@@ -1,0 +1,45 @@
+name: sample
+version: 0.0.0
+synopsis: Sample Haskell project
+dependencies:
+  - base >= 4.9 && <5
+
+library:
+  source-dirs: app
+
+executables:
+  hello:
+    main: app/Main.hs
+
+ghc-options:
+  - -Wall
+  - -Wno-type-defaults
+  - -Wno-name-shadowing
+
+default-extensions:
+  - AllowAmbiguousTypes
+  - BlockArguments
+  - DataKinds
+  - DeriveFoldable
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveTraversable
+  - DerivingVia
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - ImportQualifiedPost
+  - ImpredicativeTypes
+  - InstanceSigs
+  - LambdaCase
+  - LexicalNegation
+  - MonoLocalBinds
+  - MultiWayIf
+  - NamedFieldPuns
+  - NumericUnderscores
+  - OverloadedStrings
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TypeApplications
+  - ViewPatterns
