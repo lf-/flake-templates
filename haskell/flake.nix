@@ -3,12 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    utils.url = "github:numtide/flake-utils";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
   nixConfig.allow-import-from-derivation = true; # cabal2nix uses IFD
 
-  outputs = { self, nixpkgs, utils }:
+  outputs = { self, nixpkgs, flake-utils }:
     let
       ghcVer = "ghc902";
       makeHaskellOverlay = overlay: final: prev: {
@@ -66,7 +66,7 @@
             };
         };
     in
-    utils.lib.eachDefaultSystem out // {
+    flake-utils.lib.eachDefaultSystem out // {
       # this stuff is *not* per-system
       overlays = {
         default = makeHaskellOverlay (prev: hfinal: hprev:

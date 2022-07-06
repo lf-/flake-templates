@@ -1,0 +1,3 @@
+# normally you SHOULD check these in, but I want my templates to grab the
+# latest nixpkgs always
+flake.lock
