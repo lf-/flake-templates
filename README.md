@@ -1,6 +1,6 @@
 # Jade's flake templates
 
-This is a set of templates using flake-lib and Opinions.
+This is a set of templates using flake-utils and Opinions.
 
 Current list:
 
