@@ -1,4 +1,6 @@
 {
+  description = "Jade's flake templates";
+
   outputs = { self }:
     let
       mkTemplate = p:
@@ -20,6 +22,7 @@
               ./haskell
               ./python-adhoc
               ./yarn
+              ./rust
             ]
           );
       };
