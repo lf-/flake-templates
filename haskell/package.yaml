@@ -18,8 +18,10 @@ ghc-options:
 
 default-extensions:
   - AllowAmbiguousTypes
+  - ApplicativeDo
   - BlockArguments
   - DataKinds
+  - DeriveAnyClass
   - DeriveFoldable
   - DeriveFunctor
   - DeriveGeneric
@@ -28,6 +30,8 @@ default-extensions:
   - FlexibleContexts
   - FlexibleInstances
   - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
   - ImportQualifiedPost
   - ImpredicativeTypes
   - InstanceSigs
@@ -38,8 +42,14 @@ default-extensions:
   - NamedFieldPuns
   - NumericUnderscores
   - OverloadedStrings
+  - PatternSynonyms
+  - PolyKinds
+  - RankNTypes
   - RecordWildCards
+  - RecursiveDo
   - ScopedTypeVariables
   - StandaloneDeriving
+  - StandaloneKindSignatures
   - TypeApplications
+  - TypeFamilies
   - ViewPatterns
