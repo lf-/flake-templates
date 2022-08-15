@@ -57,7 +57,6 @@
                 ghcid
                 cabal-install
                 fast-tags
-                friendly
               ] ++ (with pkgs; [
                 sqlite
               ]);
@@ -76,9 +75,10 @@
 
             # here's how to do hacks to the package set
             # don't run the test suite
-            fast-tags = hlib.dontCheck hprev.fast-tags;
+            # fast-tags = hlib.dontCheck hprev.fast-tags;
+            #
             # don't check version bounds
-            friendly = hlib.doJailbreak hprev.friendly;
+            # friendly = hlib.doJailbreak hprev.friendly;
           });
       };
     };
