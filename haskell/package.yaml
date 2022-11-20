@@ -46,7 +46,8 @@ default-extensions:
   - ImportQualifiedPost
   - InstanceSigs
   - LambdaCase
-  - LexicalNegation
+  # This is a good idea but not supported in 8.10
+  # - LexicalNegation
   - MonoLocalBinds
   - MultiWayIf
   - NamedFieldPuns
