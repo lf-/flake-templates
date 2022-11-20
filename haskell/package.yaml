@@ -44,7 +44,6 @@ default-extensions:
   - GADTs
   - GeneralizedNewtypeDeriving
   - ImportQualifiedPost
-  - ImpredicativeTypes
   - InstanceSigs
   - LambdaCase
   - LexicalNegation
