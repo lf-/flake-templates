@@ -10,6 +10,11 @@ library:
 executables:
   hello:
     main: app/Main.hs
+    ghc-options:
+      # link to the threaded runtime
+      -threaded
+      -rtsopts
+      -with-rtsopts=-N
 
 # from https://medium.com/mercury-bank/enable-all-the-warnings-a0517bc081c3
 ghc-options:
